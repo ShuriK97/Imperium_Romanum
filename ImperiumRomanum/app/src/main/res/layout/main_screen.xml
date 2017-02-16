@@ -129,7 +129,8 @@
         android:id="@+id/button5"
         android:layout_alignBaseline="@+id/button4"
         android:layout_alignBottom="@+id/button4"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="toForum"/>
 
     <Button
         android:text="Править дальше"
