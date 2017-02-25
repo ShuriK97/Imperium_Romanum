@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="false"
+    android:layout_gravity="top|center"
+    android:layout_width="315dp">
+
+
+    <Button
+        android:text="Форум"
+        android:layout_height="wrap_content"
+        android:id="@+id/forum"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:textAllCaps="false"
+        android:onClick="toForum"
+        android:gravity="center"
+        android:freezesText="false"
+        android:layout_gravity="center"
+        android:layout_width="120dp" />
+
+    <Button
+        android:text="Править дальше"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_events"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:textAllCaps="false" />
+
+    <Button
+        android:text="Казначей"
+        android:layout_height="wrap_content"
+        android:id="@+id/hz_activity"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_width="90dp" />
+
+    <Button
+        android:text="Сенат"
+        android:layout_height="wrap_content"
+        android:id="@+id/senat"
+        android:textAllCaps="false"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_width="90dp" />
+</GridLayout>

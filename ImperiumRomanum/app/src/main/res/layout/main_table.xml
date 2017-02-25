@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:alignmentMode="alignBounds"
+    android:layout_centerInParent="true"
+    android:layout_gravity="top|center">
+
+
+    <TextView
+        android:text="Золото, кг"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/res_gold"
+        android:layout_row="1"
+        android:layout_column="0" />
+
+    <TextView
+        android:text="Земля, сальт"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/res_ground"
+        android:layout_row="2"
+        android:layout_column="0" />
+
+    <TextView
+        android:text="Рабы, тыс. душ"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/res_slave"
+        android:layout_row="4"
+        android:layout_column="0" />
+
+    <TextView
+        android:text="Легионеры, сотни чел."
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/res_army"
+        android:layout_row="5"
+        android:layout_column="0" />
+
+    <TextView
+        android:text="Запасы"
+        android:layout_width="119dp"
+        android:layout_height="26dp"
+        android:id="@+id/res_count"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Название"
+        android:layout_width="177dp"
+        android:layout_height="26dp"
+        android:id="@+id/res_name"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Зерно, тонн"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/res_seed"
+        android:layout_row="3"
+        android:layout_column="0" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:id="@+id/ground"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:id="@+id/seed"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:id="@+id/slave"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="5"
+        android:id="@+id/army"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:id="@+id/gold"
+        android:textAlignment="center" />
+
+
+</GridLayout>

@@ -19,6 +19,14 @@
             android:name=".Forum"
             android:label="Forum">
         </activity>
+        <activity
+            android:name=".Ambar"
+            android:label="Ambar">
+        </activity>
+        <activity
+            android:name=".Info"
+            android:label="Info">
+        </activity>
     </application>
 
 </manifest>

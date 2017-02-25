@@ -17,4 +17,13 @@ public class MainScreen extends AppCompatActivity {
         Intent intent=new Intent(MainScreen.this,Forum.class);
         startActivity(intent);
     }
+
+    public void timeFar(View view) {
+        Intent intent = new Intent(MainScreen.this,Ambar.class);
+        startActivity(intent);
+    }
+
+    public void Exit(View view) {
+        finish();
+    }
 }
