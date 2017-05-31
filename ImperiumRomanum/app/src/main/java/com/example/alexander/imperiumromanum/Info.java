@@ -4,15 +4,23 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class Info extends AppCompatActivity {
+/*
+ *  Просто текстовая информация об игре
+ */
+public class Info extends AppCompatActivity
+{
     @Override
-
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info);
     }
 
-    public void backMain(View view) {
+    /*
+     *  Обработчик кнопки: возврат на главную активность
+     */
+    public void backMain(View view)
+    {
         finish();
     }
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Колизей"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView28"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="      Праздник прошёл просто замечательно. Толпа ликовала. На арене были продемонстрированы различные исторические битвы, где римская армия одерживала победу над варварами. На скачках участники, не жалея себя и своих колесниц, показали поразительное представление.\n      Народ восхваляет и почитает Вас. При этом некоторые даже нажились благодаря ставкам."
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_coliseum_event"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="276dp"
+        android:layout_height="207dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/coliseum_super"
+        android:id="@+id/img_coliseum_event" />
+
+    <Button
+        android:text="ОК"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/button6"
+        android:onClick="toSenat"
+        android:textColor="#FFFF61"
+        android:textSize="14sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
+</ScrollView>

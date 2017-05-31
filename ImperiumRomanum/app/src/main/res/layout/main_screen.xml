@@ -7,11 +7,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_screen"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
     tools:context="com.example.alexander.imperiumromanum.MainScreen"
     android:weightSum="1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:backgroundTintMode="screen"
+    android:layout_gravity="center">
 
     <fragment
         android:layout_width="wrap_content"
@@ -19,17 +21,18 @@
         android:name="com.example.alexander.imperiumromanum.frag_main.Main_Top"
         tools:layout="@layout/main_top"
         android:id="@+id/fragment"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp" />
 
     <fragment
-        android:layout_width="315dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:name="com.example.alexander.imperiumromanum.frag_main.Main_Table"
         tools:layout="@layout/main_table"
         android:id="@+id/fragment2"
         android:layout_alignTop="@+id/fragment3"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center" />
 
     <fragment
@@ -38,7 +41,7 @@
         android:name="com.example.alexander.imperiumromanum.frag_main.Main_Bottom"
         tools:layout="@layout/main_bottom"
         android:id="@+id/fragment3"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="5dp"
         android:layout_alignParentStart="true"
         android:layout_gravity="center" />
 </LinearLayout>

@@ -8,25 +8,194 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".Forum"
             android:label="Forum">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Forum" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+
         <activity
             android:name=".Ambar"
             android:label="Ambar">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Ambar" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+
         <activity
             android:name=".Info"
             android:label="Info">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Info" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Senat"
+            android:label="Senat">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Senat" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Finance"
+            android:label="Finance">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Finance" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Coliseum"
+            android:label="Coliseum">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Coliseum" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ColiseumEvent"
+            android:label="ColiseumEvent">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.ColiseumEvent" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".War"
+            android:label="War">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.War" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WarBattle"
+            android:label="WarBattle">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.WarBattle" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WarBegin"
+            android:label="WarBegin">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.WarBegin" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BattleLose"
+            android:label="BattleLose">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.BattleLose" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".BattleWin"
+            android:label="BattleWin">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.BattleWin" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Dynasty"
+            android:label="ColiseumEvent">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Dynasty" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Death"
+            android:label="Death">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Death" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Annexation"
+            android:label="Annexation">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Annexation" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Corruption"
+            android:label="Corruption">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Corruption" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CatchCorrupt"
+            android:label="CatchCorrupt">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.CatchCorrupt" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Disease"
+            android:label="Disease">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.Disease" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DiseaseEvent"
+            android:label="DisaseEvent">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.DiseaseEvent" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".GameOver"
+            android:label="GameOver">
+            <intent-filter>
+                <action android:name="android.intent.action.com.example.alexander.imperiumromanum.GameOver" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

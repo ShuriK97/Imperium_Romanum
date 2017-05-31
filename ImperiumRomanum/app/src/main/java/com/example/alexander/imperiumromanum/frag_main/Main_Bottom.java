@@ -9,13 +9,14 @@ import android.view.ViewGroup;
 
 import com.example.alexander.imperiumromanum.R;
 
-
-public class Main_Bottom extends Fragment {
+/*
+ *  Нижний фрагмент главной активности (кнопки перехода)
+ */
+public class Main_Bottom extends Fragment
+{
     @Override
-
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
-        View frag = inflater.inflate(R.layout.main_bottom,container,false);
-        return frag;
+        return inflater.inflate(R.layout.main_bottom,container,false);
     }
 }

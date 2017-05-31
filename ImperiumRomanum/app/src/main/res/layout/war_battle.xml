@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Война"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView66"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="#000000"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="Перед битвой"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView67"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:text="Силы противоборствующих сторон"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView69"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_width="280dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="1000 сотен легионеров"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_battle_army"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:text="1000 тыс. вооружённых рабов"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_battle_slaves"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:text="1000 сотен наёмников"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_battle_killers"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:text="1000 тыс. варваров"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_battle_enemies"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="280dp"
+        app:srcCompat="@drawable/war_battle"
+        android:id="@+id/imageView18"
+        android:layout_weight="0.00"
+        android:layout_gravity="center"
+        android:layout_height="130dp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:text="В атаку!"
+        android:layout_height="40dp"
+        android:id="@+id/btn_attack"
+        android:textColor="#FFFF61"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:layout_width="100dp"
+        android:onClick="attack" />
+</LinearLayout>
+    </ScrollView>

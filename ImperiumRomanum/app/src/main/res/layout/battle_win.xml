@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:weightSum="1">
+
+    <TextView
+        android:text="Война"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView73"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="ПОБЕДА"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView74"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="24sp"
+            android:textColor="#000000" />
+
+        <TextView
+        android:text="Ваша армия захватила трофеи:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView75"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp" />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:alignmentMode="alignBounds"
+        android:layout_centerInParent="true"
+        android:layout_gravity="top|center"
+        android:id="@+id/trophy"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:text="Запасы"
+            android:layout_height="26dp"
+            android:id="@+id/res_count"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_width="120dp" />
+
+        <TextView
+            android:text="Название"
+            android:layout_height="26dp"
+            android:id="@+id/res_name"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_width="130dp" />
+
+        <TextView
+            android:text="Золото, кг"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_gold"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textColor="#000000" />
+
+        <TextView
+            android:text="Земля, сальт"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_ground"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:textColor="#000000" />
+
+        <TextView
+            android:text="Рабы, тыс. душ"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_slave"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:textColor="#000000" />
+
+        <TextView
+            android:text="Зерно, тонн"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_seed"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:textColor="#000000" />
+
+        <TextView
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:id="@+id/txt_gold_war_trophy"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_width="120dp" />
+
+        <TextView
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:id="@+id/txt_land_war_trophy"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_width="120dp" />
+
+        <TextView
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:id="@+id/txt_seed_war_trophy"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_width="120dp" />
+
+        <TextView
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:id="@+id/txt_slaves_war_trophy"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_width="120dp" />
+
+        <TextView
+            android:text="Монеты, денариев"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:id="@+id/res_coin"
+            android:textColor="#000000"
+            android:layout_width="130dp" />
+
+        <TextView
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:id="@+id/txt_money_war_trophy"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_width="120dp" />
+
+    </GridLayout>
+
+    <TextView
+        android:text="      Здесь инфа о потерях"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_war_losses"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_width="280dp" />
+
+
+    <ImageView
+        app:srcCompat="@drawable/victory"
+        android:id="@+id/imageView15"
+        android:layout_width="280dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.31"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:text="ОК"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn_get_trophies"
+        android:textColor="#FFFF61"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="getTrophies" />
+</LinearLayout>
+</ScrollView>

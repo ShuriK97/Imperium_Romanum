@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:weightSum="1">
+
+    <TextView
+        android:text="Война"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView61"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="#000000"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="Формирование войска"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView62"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView61"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:text="      Численность Вашей армии 1000 сотен легионеров."
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_army"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView62"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:layout_gravity="center" />
+    <TextView
+        android:text="      Вы можете мобилизировать 1000 тыс. рабов, но в империи вырастет недовольство!"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_mobil_slaves"
+        android:layout_below="@+id/textView62"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" />
+
+    <GridLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:ems="10"
+            android:id="@+id/txt_mobilise"
+            android:layout_below="@+id/textView64"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/seek_bar_killers"
+            android:layout_gravity="center" />
+
+        <SeekBar
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek_bar_mobilise"
+            android:layout_below="@+id/textView64"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center" />
+    </GridLayout>
+
+    <TextView
+        android:text="      Недовольство вырастет на 0%."
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_unhappy"
+        android:layout_alignBaseline="@+id/editText14"
+        android:layout_alignBottom="@+id/editText14"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:text="      Есть возможность завербовать наёмников на время войны. Сотня наёмников стоит 500 денариев."
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_killers_acquire"
+        android:layout_below="@+id/editText14"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:layout_gravity="center" />
+    <TextView
+        android:text="      В казне 1000000 денариев."
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_war_money"
+        android:layout_below="@+id/editText14"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" />
+
+    <GridLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:ems="10"
+            android:id="@+id/txt_killers"
+            android:layout_below="@+id/txt_killers_acquire"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center" />
+
+        <SeekBar
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek_bar_killers"
+            android:layout_alignTop="@+id/txt_killers"
+            android:layout_alignStart="@+id/seek_bar_mobilise"
+            android:layout_alignEnd="@+id/seek_bar_mobilise"
+            android:layout_gravity="center" />
+    </GridLayout>
+
+    <ImageView
+        android:layout_width="280dp"
+        app:srcCompat="@drawable/war_begin"
+        android:id="@+id/imageView19"
+        android:layout_gravity="center"
+        android:layout_weight="0.28"
+        android:layout_height="135dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:text="Нанять и мобилизировать"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txt_killers"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_mobilise"
+        android:textColor="#FFFF61"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:textAllCaps="false"
+        android:onClick="mobilise"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
+</ScrollView>
